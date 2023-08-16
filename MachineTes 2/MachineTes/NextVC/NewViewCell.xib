@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NewViewCell" reuseIdentifier="NewViewCell" id="xR3-jN-rIV" customClass="NewViewCell" customModule="MachineTes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zSO-A4-6Jl">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-5J-Nyf">
+                        <rect key="frame" x="14" y="14" width="107" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download (7)" translatesAutoresizingMaskIntoConstraints="NO" id="Dar-g7-vfh">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="50"/>
+                                <color key="tintColor" red="0.69023975959999995" green="0.69179531009999995" blue="0.71553280080000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="EA7-K1-JD9"/>
+                                    <constraint firstAttribute="height" constant="50" id="RjE-pC-9pr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFI-nQ-zy9">
+                                <rect key="frame" x="0.0" y="55" width="107" height="20"/>
+                                <color key="backgroundColor" red="0.69023975959999995" green="0.69179531009999995" blue="0.71553280080000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Bu4-V6-Att"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nn-KE-kmu">
+                                <rect key="frame" x="0.0" y="80" width="107" height="20"/>
+                                <color key="backgroundColor" red="0.69023975959999995" green="0.69179531009999995" blue="0.71553280080000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NBt-K7-je0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Dp7-5J-Nyf" firstAttribute="leading" secondItem="zSO-A4-6Jl" secondAttribute="leading" constant="14" id="DSs-U9-Aay"/>
+                    <constraint firstAttribute="trailing" secondItem="Dp7-5J-Nyf" secondAttribute="trailing" constant="14" id="NqP-MN-rE7"/>
+                    <constraint firstAttribute="bottom" secondItem="Dp7-5J-Nyf" secondAttribute="bottom" constant="14" id="gdC-cF-d58"/>
+                    <constraint firstItem="Dp7-5J-Nyf" firstAttribute="top" secondItem="zSO-A4-6Jl" secondAttribute="top" constant="14" id="v2R-0d-jVN"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="135" height="128"/>
+            <connections>
+                <outlet property="View" destination="zSO-A4-6Jl" id="28P-Pd-XaM"/>
+                <outlet property="image" destination="Dar-g7-vfh" id="Iwj-zk-Lh6"/>
+                <outlet property="label1" destination="IFI-nQ-zy9" id="K03-AZ-KP0"/>
+                <outlet property="label2" destination="5nn-KE-kmu" id="7sj-Se-fqI"/>
+            </connections>
+            <point key="canvasLocation" x="67.938931297709928" y="-121.12676056338029"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="download (7)" width="122" height="122"/>
+    </resources>
+</document>
